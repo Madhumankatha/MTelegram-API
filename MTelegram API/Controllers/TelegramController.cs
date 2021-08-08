@@ -21,7 +21,7 @@ namespace MTelegram_API.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Index(MTelegram telegram )
         {
-            var bot = new TelegramBotClient("1930703905:AAHWBR3ea5ZzRHgMRj4CVBuEuYdgKh9gXhM");
+            var bot = new TelegramBotClient("API_TOKEN");
 
             await bot.SendTextMessageAsync(
                 chatId: "@asp_net_18",
